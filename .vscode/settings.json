@@ -1,0 +1,7 @@
+{
+    "ai.azureml.workspaceFilter": {
+        "/subscriptions/643cc826-364c-480a-9bb6-6e7d6c8b3117": [
+            "/subscriptions/643cc826-364c-480a-9bb6-6e7d6c8b3117/resourceGroups/rb-ml/providers/Microsoft.MachineLearningServices/workspaces/rb-ml"
+        ]
+    }
+}
