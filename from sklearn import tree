@@ -1,0 +1,8 @@
+from sklearn import tree
+from sklearn import metrics
+
+clf = tree.DecisionTreeClassifier(max_depth=3)
+
+cols = ['fixed acidity', 
+        'volatile acidity',
+        'citric acid']
