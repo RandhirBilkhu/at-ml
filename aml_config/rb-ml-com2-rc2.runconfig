@@ -1,0 +1,81 @@
+{
+    "script": "train.py",
+    "arguments": [],
+    "framework": "Python",
+    "communicator": "None",
+    "target": "rb-ml-com2",
+    "environment": {
+        "name": "AzureML-Minimal-Inference-CPU",
+        "version": "2",
+        "python": {
+            "interpreterPath": "python",
+            "userManagedDependencies": true,
+            "condaDependencies": {
+                "channels": [
+                    "anaconda",
+                    "conda-forge"
+                ],
+                "dependencies": [
+                    "python=3.6.2",
+                    {
+                        "pip": [
+                            "azureml-defaults==1.26.0"
+                        ]
+                    }
+                ],
+                "name": "project_environment"
+            },
+            "baseCondaEnvironment": null
+        },
+        "environmentVariables": {
+            "EXAMPLE_ENV_VAR": "EXAMPLE_VALUE"
+        },
+        "docker": {
+            "baseImage": null,
+            "platform": {
+                "os": "Linux",
+                "architecture": "amd64"
+            },
+            "baseDockerfile": "FROM mcr.microsoft.com/azureml/minimal-py3.7-inference-cpu:20210326.v1",
+            "baseImageRegistry": {
+                "address": null,
+                "username": null,
+                "password": null
+            },
+            "enabled": false,
+            "arguments": []
+        },
+        "spark": {
+            "repositories": [],
+            "packages": [],
+            "precachePackages": true
+        },
+        "inferencingStackVersion": null,
+        "configUri": "/subscriptions/643cc826-364c-480a-9bb6-6e7d6c8b3117/resourceGroups/rb-ml/providers/Microsoft.MachineLearningServices/workspaces/rb-ml/environments/AzureML-Minimal-Inference-CPU/versions/2"
+    },
+    "history": {
+        "outputCollection": true,
+        "snapshotProject": false,
+        "directoriesToWatch": [
+            "logs"
+        ]
+    },
+    "docker": {
+        "useDocker": true
+    },
+    "data": {
+        "rbmlwinequality": {
+            "dataLocation": {
+                "dataset": {
+                    "id": "1b450960-ca89-4162-81be-ffc6747a30d3"
+                },
+                "dataPath": null
+            },
+            "createOutputDirectories": false,
+            "mechanism": "Direct",
+            "environmentVariableName": "rbmlwinequality",
+            "pathOnCompute": null,
+            "overwrite": false
+        }
+    }
+}
